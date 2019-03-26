@@ -21,7 +21,7 @@ import { Router } from "@angular/router";
         required 
         placeholder="Enter city name" 
         autocomplete="off">
-        <button type="submit" routerLink="city" (click)="onSubmit($event)">Search</button>
+        <button type="submit" routerLink="city" (click)="onSubmit($event)"><img src="../../assets/images/search.png" alt="search" /> Search</button>
         <city-list *ngFor="let city of this.cities" [city]="city" (click)="getValue(input,$event.target.innerHTML)"></city-list>
     </form>
 </section>
